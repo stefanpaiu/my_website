@@ -1,0 +1,20 @@
+/* --- Navbar --- */
+.navbar {
+    background-color:#fffde8; 
+    padding:10px 10%;
+}
+
+.navbar-logo {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    /* margin-left: 1rem; */
+}
+
+.nav-link {
+    color: #f09c67;
+}
+
+/* .navbar-toggler-icon {
+    color: #f09c67;
+} */
