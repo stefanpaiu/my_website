@@ -1,5 +1,16 @@
+/* --- HTML Elements ---*/
+
+    /* --- Horizontal Rules --- */
+        hr {
+            border: dotted #fff4d7 6px !important;
+            border-bottom: none !important;
+            width: 40%;
+        }
 
 /* --- Navbar --- */
+nav {
+    transition: top 0.3s ease-in-out;
+}
 
 .navbar {
     background-color:#fffde8; 
@@ -34,6 +45,16 @@
     text-align: center;
 }
 
+.nav-up {
+    top: -137px !important;
+}
+
+/* --- Sections --- */
+
+.white-section {
+    background-color: #fff;
+}
+
 /* --- Title section --- */
 
 #title {
@@ -49,7 +70,7 @@
     position: relative;
     text-align: center;
     color: #f09c67;
-    margin-top: 130px;
+    margin-top: 190px;
     font-family: 'Gloria Hallelujah', cursive;
     max-width: 100%;
     height: auto;
@@ -57,7 +78,7 @@
 
 @media screen and (max-width: 992px) {
     .title-text {
-      font-size: 25px;
+      font-size: 28px;
     }
 }
 
@@ -74,4 +95,43 @@
     margin: 0 auto;
     max-width: 55%;
     max-height:55%;
+}
+
+/* --- About section --- */
+
+#about {
+    padding: auto 70px;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 3.5em;
+    font-family: 'Swanky and Moo Moo', cursive;
+    padding-top: 20px;
+    color: #f09c67;
+}
+
+.about-picture{
+    border-radius: 50%;
+    width: 120px;
+    margin-top: 55px;
+}
+
+.about-myself {
+    padding: 0 200px 15px !important;
+    font-family: 'Montserrat';
+}
+
+.my-hobbies{
+    padding: 15px 200px 30px !important;  
+    font-family: 'Montserrat'; 
+}
+
+@media screen and (max-width: 992px) {
+    .my-hobbies {
+        padding: 15px 40px 15px !important;  
+    }
+    .about-myself {
+        padding: 15px 40px 15px !important;  
+    }
 }
