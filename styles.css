@@ -1,11 +1,18 @@
 /* --- HTML Elements ---*/
 
     /* --- Horizontal Rules --- */
-        hr {
-            border: dotted #fff4d7 6px !important;
-            border-bottom: none !important;
-            width: 40%;
-        }
+    hr {
+        border: dotted #fff4d7 6px !important;
+        border-bottom: none !important;
+        width: 40%;
+    }
+
+    /* --- Headings --- */
+    h3 {
+        font-size: 3rem !important;
+        font-family: 'Swanky and Moo Moo', cursive;
+        color: #f09c67;
+    }
 
 /* --- Navbar --- */
 nav {
@@ -17,11 +24,13 @@ nav {
 }
 
 .navbar-brand {
-    margin-left: 5rem;
+    margin-left: 20%;
 }
 
-.navbar-toggler {
-    margin-right: 5rem;
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+      margin-left: 2rem;
+    }
 }
 
 .navbar-logo {
@@ -34,15 +43,19 @@ nav {
     padding: 0 5rem;
 }
 
+.navbar-nav {
+    margin-right: 20%;
+}
 .nav-item {
     padding: 0 18px;
 }
 
 .nav-link {
     color: #f09c67 !important;
-    font-size: 24px;
-    font-weight: 550;
+    font-size: 18px;
+    /* font-weight: 600; */
     text-align: center;
+    font-family: "Montserrat";
 }
 
 .nav-up {
@@ -53,6 +66,26 @@ nav {
 
 .white-section {
     background-color: #fff;
+    text-align: center;
+}
+.colored-section {
+    background-color: #fffde8;
+    text-align: center;
+}
+
+.overview {
+    padding: 0 200px 15px !important;
+    font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 992px) {
+    .overview {
+        padding: 0 0 15px !important;
+    }
+}
+
+.row {
+    color: #4c8492;
 }
 
 /* --- Title section --- */
@@ -86,40 +119,31 @@ nav {
     max-width: 100%;
     height: auto;
     margin-top: 0;
-    font-size: 28px;
-    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 20px;
+    font-family: "Montserrat";
 
 }
 
 .background-image{
     margin: 0 auto;
-    max-width: 55%;
-    max-height:55%;
+    max-width: 62%;
+    max-height:62%;
 }
 
 /* --- About section --- */
 
 #about {
-    padding: auto 70px;
-    text-align: center;
+    padding: 25px 70px; 
 }
 
-.about-title {
-    font-size: 3.5em;
-    font-family: 'Swanky and Moo Moo', cursive;
-    padding-top: 20px;
-    color: #f09c67;
-}
+#about h3{
+    padding-top: 25px;
+}   
 
 .about-picture{
     border-radius: 50%;
     width: 120px;
     margin-top: 55px;
-}
-
-.about-myself {
-    padding: 0 200px 15px !important;
-    font-family: 'Montserrat';
 }
 
 .my-hobbies{
@@ -134,4 +158,59 @@ nav {
     .about-myself {
         padding: 15px 40px 15px !important;  
     }
+}
+
+/* --- What I am good at ---*/
+
+#wiaga {
+    padding: 75px 100px 25px 100px;
+}
+
+#wiaga h3 {
+    padding-bottom:25px; 
+}
+
+#wiaga .overview {
+    margin-bottom: 30px;
+}
+
+.skills-column {
+    padding: 3% 2%;
+}
+
+.message-me {
+    font-family: 'Montserrat';
+    color: #4c8492;
+}
+
+/* --- Contact ---*/
+
+#contact {
+    padding: 75px 100px 0;
+}
+
+#contact .container-fluid {
+    padding: 2rem 5rem;
+}
+
+.contact-image{
+    max-width: 100%;
+}
+
+.contact-text {
+    font-family: 'Montserrat';
+    padding: 0 100px 25px !important;
+}
+
+@media screen and (max-width: 992px) {
+    .contact-text {
+        padding: 0 0 25px !important;
+    }
+}
+/* --- Footer --- */
+
+#footer {
+    padding: 1.5rem;
+    font-family: 'Montserrat';
+    color: #f09c67;
 }
