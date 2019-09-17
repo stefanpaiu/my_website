@@ -43,9 +43,7 @@ nav {
     padding: 0 5rem;
 }
 
-.navbar-nav {
-    margin-right: 20%;
-}
+
 .nav-item {
     padding: 0 18px;
 }
@@ -56,6 +54,20 @@ nav {
     /* font-weight: 600; */
     text-align: center;
     font-family: "Montserrat";
+}
+
+.bat-1 {
+    margin-top: 150px;
+    max-width: 35%;
+}
+
+.bat-2 {
+    margin-top: 260px;
+    max-width: 25%;
+}
+
+.nav-link:hover {
+    color: #4c8492 !important;
 }
 
 .nav-up {
@@ -213,4 +225,24 @@ nav {
     padding: 1.5rem;
     font-family: 'Montserrat';
     color: #f09c67;
+}
+
+
+/* ------------------------------------- About page ------------------------------------- */
+
+#story {
+    padding-bottom: 3rem;
+}
+
+/* Where To Find Me */
+#wtfm {
+    padding: 3rem 0;
+} 
+
+
+
+@media screen and (max-width: 992px) {
+    .story-category {
+        padding: 0 3rem 3rem;
+    }
 }
