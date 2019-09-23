@@ -46,14 +46,12 @@
         <!-- Top -->
         <section class="colored-section" id="title">
 
-            <div class="container-fluid">
-
                 <!-- Navbar -->
                 <nav class="navbar navbar-expand-lg fixed-top navbar-light">
                         
-                    <a class="navbar-brand" href="/"><img alt="Brand" class="navbar-logo img-fluid" src="images/FaceIcon.png"></a>
+                    <a class="navbar-brand" href="/"><img alt="Brand" class="navbar-logo img-fluid" src="images/FaceIcon.svg"></a>
                     
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarTogglerDemo02" data-target="#navbarTogglerDemo02" aria-expanded="false"  aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
@@ -72,11 +70,10 @@
                     </div>
                     
                 </nav>
-            </div>
 
             <div class="row">
                 <div class="col-3 mx-auto" style="text-align: right;">
-                    <img src="images/bat2.png" class="bat-2">
+                    <img src="images/bat2.svg" class="bat-2">
                 </div>
                 <div class="col-6">
 
@@ -84,7 +81,7 @@
                     <p class="title-text secondary-text">a web developer and designer.</p>
                 </div>
                 <div class="col-3 mx-auto" style="text-align: left;">
-                        <img src="images/bat1.png" class="bat-1">
+                        <img src="images/bat1.svg" class="bat-1">
                 </div> 
                 <img src="images/homepage-no-background.png" alt="" class="background-image">
             </div>
@@ -94,7 +91,7 @@
         <section class="white-section" id="about">
 
             <div class="container-fluid">
-                <img src="images/FaceIcon.png" class="about-picture" alt="">
+                <img src="images/FaceIcon.svg" class="about-picture" alt="">
                 <h3>
                     Hi!
                 </h3>
@@ -130,12 +127,14 @@
                         Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
                     </div>
                     <div class="col-md-12 message-me">
-                        <button type="button" class="btn btn-info"> <i class="fas fa-envelope"> </i> Available for freelance work</button>
+                        <a href="mailto:stefan.paiu.business@gmail.com">
+                            <button type="button" class="btn btn-info"><i class="fas fa-fw fa-envelope"> </i> Available for freelance work   </i> </button>
+                        </a> 
                     </div>
                     <div class="skills-column col-lg-4">
                       <div class="card">
                         <div class="card-header">
-                          <h4>Web Development</h3>
+                          <h4>Web Development</h4>
                         </div>
                         <div class="card-body">
                           <h2 class="price-text">Free</h2>
@@ -149,7 +148,7 @@
                     <div class="skills-column col-lg-4">
                       <div class="card">
                         <div class="card-header">
-                          <h4>Graphic Design</h3>
+                          <h4>Graphic Design</h4>
                         </div>
                         <div class="card-body">
                           <h2 class="price-text">$49 / mo</h2>
@@ -163,7 +162,7 @@
                     <div class="skills-column col-lg-4">
                       <div class="card">
                         <div class="card-header">
-                          <h4>Back-End Development</h3>
+                          <h4>Back-End Development</h4>
                         </div>
                         <div class="card-body">
                           <h2 class="price-text">$99 / mo</h2>
@@ -188,6 +187,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="contact-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <div class="col-md-12 message-me">
+                    <a href="contact.html">
+                        <button type="button" class="btn btn-info"> Check me out </button>
+                    </a>
+                    </div>
                     <hr>
                 </div>
                 <div class="row">
@@ -211,12 +215,14 @@
 
         <footer class="colored-section" id="footer">
             <div class="container-fluid">
-                <div style="font-size: .75rem">All graphics displayed on this website are my sole work and are © Copyright Stefan Paiu, unless otherwise noted.</div>
+                <div style="font-size: 1rem">All graphics displayed on this website are my sole work and are © Copyright Stefan Paiu, unless otherwise noted.</div>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type="text/javascript" src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
     </body>
 </html>

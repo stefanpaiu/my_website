@@ -37,7 +37,17 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-// For navbar to hide, but it does not disappear
-$(".navbar-toggler").click(function(){
-  $("#navbarTogglerDemo02").toggleClass("show");
+
+$('.navbar-toggler').click(function() {
+  var aria = $('.navbar-toggler').attr('aria-expanded');
+  if(aria === false){
+    console.log(aria);
+    aria = true;
+    console.log(aria);
+  }
+  else{
+    console.log(aria);
+    aria = false;  
+    console.log(aria);
+  }
 })
