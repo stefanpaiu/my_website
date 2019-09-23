@@ -28,7 +28,7 @@ nav {
 }
 
 .navbar-brand {
-    margin-left: 20%;
+    margin-left: 15%;
 }
 
 @media screen and (max-width: 992px) {
@@ -197,7 +197,7 @@ nav {
     padding: 3% 2%;
 }
 
-.message-me {
+.link-button {
     font-family: 'Montserrat';
     color: #4c8492;
     padding-bottom: 2vh;
@@ -230,9 +230,13 @@ nav {
 /* --- Footer --- */
 
 #footer {
-    padding: 3rem;
+    padding:2rem;
     font-family: 'Montserrat';
     color: #f09c67;
+
+    width: 100%;
+
+    font-size: 1rem;
 }
 
 
@@ -253,4 +257,60 @@ nav {
     .story-category {
         padding: 0 3rem 3rem;
     }
+}
+
+/* ------------------------------------- Portfolio page ------------------------------------- */
+
+#portfolio {
+    padding: 0;
+}
+
+.portfolio-description{
+    background-color: #4c8492;
+    padding: 4.5rem !important;
+    color: white;
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+.message-button {
+    font-family: 'Montserrat';
+    color:white !important;
+    margin-top: 2rem;
+}
+.btn-warning {
+    background-color: #f09c67 !important;
+    border-color: #f09c67 !important;
+}
+.btn-warning:hover {
+    background-color: #f7af82 !important;
+    border-color: #f7af82  !important;
+}
+
+.basketball {
+    font-weight: bold;
+    color: white;
+    text-decoration: none !important;
+    border-style: solid;
+    border-color: #4c8492;
+}
+.basketball:hover {
+    border-radius: 30px;
+    background-color: #fff4d7;
+    border-color: #fff4d7 !important;
+}
+
+.portfolio-title {
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+    color: #f09c67;
+    font-family: 'Gloria Hallelujah', cursive;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item {
+    padding: .75rem;
+    font-weight: bold;
 }
