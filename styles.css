@@ -1,316 +1,381 @@
-/* --- HTML Elements ---*/
-
-    /* --- Horizontal Rules --- */
-    hr {
-        border: dotted #fff4d7 6px !important;
-        border-bottom: none !important;
-        width: 40%;
-    }
-
-    /* --- Headings --- */
-    h3 {
-        font-size: 3rem !important;
-        font-family: 'Swanky and Moo Moo', cursive;
-        color: #f09c67;
-    }
-
-    .fas {
-        margin: 0 5px;
-    }
-
-/* --- Navbar --- */
-nav {
-    transition: top 0.3s ease-in-out;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar {
-    background-color:#fffde8; 
+/* -------- Global --------*/
+h1 {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-weight: 400;
+    font-size: 72px;
+    color:#4C8492;
 }
 
-.navbar-brand {
-    margin-left: 15%;
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #4C8492;
+    padding-bottom: .75rem;
 }
 
-@media screen and (max-width: 992px) {
-    .navbar-brand {
-      margin-left: 2rem;
-    }
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4C8492;
+    margin-bottom: .5rem;
+    line-height: 2rem;
 }
 
-.navbar-logo {
-    border-radius: 50%;
-    width: 75px;
-    padding: 18px 0;
-}
-
-.navbar-collapse {
-    padding: 0 5rem;
-}
-
-.navbar-nav {
-    padding-right: 10vw;
-}
-
-.nav-item {
-    padding: 0 18px;
-}
-
-.nav-link {
-    color: #f09c67 !important;
+li, a, button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 18px;
-    /* font-weight: 600; */
-    text-align: center;
-    font-family: "Montserrat";
+    color: #4C8492;
+    text-decoration: none;
+}
+
+button {
+    padding:9px 25px;
+    background-color: #F09C67;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    height: 3rem;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: rgb(247, 173, 127);
+}
+/*--------  Horizontal Lines --------*/
+.white-line{
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 2px;
+    margin: 2.5rem 5rem;
+}
+
+.colored-line{
+    border: 2px solid rgba(76, 132, 146, 0.35);
+    border-radius: 2px;
+    margin: 2.5rem 5rem;
+}
+/* -------- Navbar --------*/
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 8% 20px 10%;
+    background-color: #C7DBE0;
+    height: 12vh;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+  
+.brand {
+    width:65px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brand:hover {
+    opacity: .85;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(27, 192, 233);
+}
+
+/* -------- Landing Section -------- */
+
+#landing-section {
+    padding-bottom: 35px;
+}
+
+.inline-container {
+    display: flex;
+    justify-content:center;
 }
 
 .bat-1 {
-    margin-top: 150px;
-    max-width: 35%;
+    width:80px;
+    margin: 70px 150px 0 0;
+    transition: all .7s ease-in-out;
+}
+
+.landing-text {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.landing-paragraphs {
+    margin-top: 1rem;
 }
 
 .bat-2 {
-    margin-top: 260px;
-    max-width: 25%;
+    width:100px;
+    margin: 55px 0 0 150px;
+    transition: all .7s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #4c8492 !important;
+/*  -------- THE IMAGE -------- */
+
+.landing-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:760px;
 }
 
-.nav-up {
-    top: -137px !important;
-}
+/* -------- About Section -------- */
 
-/* --- Sections --- */
-
-.white-section {
-    background-color: #fff;
+#about{
     text-align: center;
 }
+
 .colored-section {
-    background-color: #fffde8;
-    text-align: center;
+    background-color: #C7DBE0;
 }
 
-.overview {
-    padding: 0 200px 15px !important;
-    font-family: 'Montserrat';
+.colored-section  h1 {
+    color:white;
 }
 
-@media screen and (max-width: 992px) {
-    .overview {
-        padding: 0 0 15px !important;
-    }
+.container {
+    padding: 3rem 15rem;
 }
 
-.row {
-    color: #4c8492;
-}
-
-/* --- Title section --- */
-
-#title {
-    background-color:#fffde8;
-}
-
-#title .row {
-    margin: 0 !important;
-}
-
-.title-text{
-    font-size: 45px;
-    position: relative;
-    text-align: center;
-    color: #f09c67;
-    margin-top: 190px;
-    font-family: 'Gloria Hallelujah', cursive;
-    max-width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width: 992px) {
-    .title-text {
-      font-size: 28px;
-    }
-}
-
-.secondary-text{
-    max-width: 100%;
-    height: auto;
-    margin-top: 0;
-    font-size: 20px;
-    font-family: "Montserrat";
-
-}
-
-.background-image{
-    margin: 0 auto;
-    max-width: 62%;
-    max-height:62%;
-}
-
-/* --- About section --- */
-
-#about {
-    padding: 25px 70px; 
-}
-
-#about h3{
-    padding-top: 25px;
-}   
-
-.about-picture{
+.avatar {
+    width:100px;
     border-radius: 50%;
-    width: 120px;
-    margin-top: 55px;
+    margin-bottom: 1rem;
 }
 
-.my-hobbies{
-    padding: 15px 200px 30px !important;  
-    font-family: 'Montserrat'; 
+.fa-patreon, .fa-youtube, .fa-envelope-open-text, .fa-paypal{
+    color: #EE7469;
+    font-size: 64px;
+    cursor: pointer;
+}
+.fa-patreon:hover, .fa-youtube:hover, .fa-envelope-open-text:hover, .fa-paypal:hover{
+    opacity: .85;
 }
 
-@media screen and (max-width: 992px) {
-    .my-hobbies {
-        padding: 15px 40px 15px !important;  
-    }
-    .about-myself {
-        padding: 15px 40px 15px !important;  
-    }
+.about-list {
+    padding:0 5rem;
 }
 
-/* --- What I am good at ---*/
-
-#wiaga {
-    padding: 75px 100px 25px 100px;
+.left-container {
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
 }
 
-#wiaga h3 {
-    padding-bottom:25px; 
+.right-container {
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
 }
 
-#wiaga .overview {
-    margin-bottom: 30px;
+.left-about {
+    text-align: right;
+    padding-left: 2rem;
 }
 
-.skills-column {
-    padding: 3% 2%;
+.right-about {
+    text-align: left;
+    padding-right: 2rem;
 }
 
-.link-button {
-    font-family: 'Montserrat';
-    color: #4c8492;
-    padding-bottom: 2vh;
+/* -------- More Content -------- */
+
+#more-content{
+    text-align: center;
 }
 
-/* --- Contact ---*/
-
-#contact {
-    padding: 75px 100px 0;
+.col-6 {
+    display: flex;
+    padding:0 5rem;
 }
 
-#contact .container-fluid {
+.col-6 p{
+    padding: 1rem 0;
+}
+
+.col-left{
+    padding-right: 1rem;
+}
+
+.col-right{
+    padding-left: 1rem;
+}
+
+/* -------- Donations -------- */
+
+#donations{
+    text-align: center;
+}
+
+.thanks-note {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color:rgba(22, 82, 97, 0.75);
     padding: 2rem 5rem;
 }
 
-.contact-image{
-    max-width: 100%;
-}
+/* -------- Footer -------- */
 
-.contact-text {
-    font-family: 'Montserrat';
-    padding: 0 100px 25px !important;
-}
-
-@media screen and (max-width: 992px) {
-    .contact-text {
-        padding: 0 0 25px !important;
-    }
-}
-/* --- Footer --- */
-
-#footer {
-    padding:2rem;
-    font-family: 'Montserrat';
-    color: #f09c67;
-
-    width: 100%;
-
-    font-size: 1rem;
-}
-
-
-/* ------------------------------------- About page ------------------------------------- */
-
-#story {
-    padding-bottom: 3rem;
-}
-
-/* Where To Find Me */
-#wtfm {
-    padding: 3rem 0;
-} 
-
-
-
-@media screen and (max-width: 992px) {
-    .story-category {
-        padding: 0 3rem 3rem;
-    }
-}
-
-/* ------------------------------------- Portfolio page ------------------------------------- */
-
-#portfolio {
-    padding: 0;
-}
-
-.portfolio-description{
-    background-color: #4c8492;
-    padding: 4.5rem !important;
-    color: white;
-    height: 100%;
-    font-family: 'Montserrat';
-}
-
-.message-button {
-    font-family: 'Montserrat';
-    color:white !important;
-    margin-top: 2rem;
-}
-.btn-warning {
-    background-color: #f09c67 !important;
-    border-color: #f09c67 !important;
-}
-.btn-warning:hover {
-    background-color: #f7af82 !important;
-    border-color: #f7af82  !important;
-}
-
-.basketball {
-    font-weight: bold;
-    color: white;
-    text-decoration: none !important;
-    border-style: solid;
-    border-color: #4c8492;
-}
-.basketball:hover {
-    border-radius: 30px;
-    background-color: #fff4d7;
-    border-color: #fff4d7 !important;
-}
-
-.portfolio-title {
-    font-size: 45px;
-    position: relative;
+footer {
     text-align: center;
-    color: #f09c67;
-    font-family: 'Gloria Hallelujah', cursive;
-    max-width: 100%;
-    height: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4C8492;
+    padding: 2rem;
 }
 
-.portfolio-item {
-    padding: .75rem;
-    font-weight: bold;
+/* -------- MEDIA -------- */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+    .container {
+        padding: 3rem 10rem;
+    }
+
+    .col-left{
+        padding-right: 1.5rem;
+    }
+    
+    .col-right{
+        padding-left: 1.5rem;
+    }
+
+    .col-6 {
+        display: block;
+        padding:0 1rem;
+    }
+
+    .col-left{
+        padding-bottom: 2rem;
+        padding-right: 0;
+    }
+
+    .col-right{
+        padding-left: 0;
+    }
 }
+
+
+
+@media screen and (max-width: 810px) {
+    .landing-image {
+        width: 90%;
+    }
+
+    .about-list {
+        padding:0;
+    }
+}
+@media screen and (max-width: 690px) {
+
+    .brand {
+        width:48px;
+    }
+
+    button {
+        padding:9px 15px;
+        height: 2.5rem;
+    }
+
+    #donation-button{
+        display: none;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    li, a {
+        font-size: 16px;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 0 8px;
+    }
+
+    #landing-section {
+        padding-bottom: 20px;
+    }
+
+    .inline-container{
+        padding-top: 10px;
+    }
+
+    .bat-1 {
+        width:20%;
+        margin: 150px 20px 0 10px;
+    }
+    .bat-2 {
+        width:20%;
+        margin: 120px 10px 0 20px;
+    }
+
+    .landing-image {
+        width:75%;
+        min-width:300px;
+        padding-top:50px;
+    }
+
+    .container {
+        padding: 3rem 40px;
+    }
+
+    .left-container {
+        display: flex;
+    }
+    
+    .right-container {
+        display: flex;
+
+    }
+
+    .zero-bottom-padding {
+        padding-bottom:0;
+    }
+
+    .thanks-note {
+        font-family: 'Swanky and Moo Moo', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color:rgba(22, 82, 97, 0.75);
+        padding: 1rem;
+    }
+}
+
