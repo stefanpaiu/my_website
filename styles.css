@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Global --------*/
+h1 {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-weight: 400;
+    font-size: 72px;
+    color:#4C8492;
+}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #4C8492;
+    padding-bottom: .75rem;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4C8492;
+    margin-bottom: .5rem;
+    line-height: 2rem;
+}
+
+li, a, button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4C8492;
+    text-decoration: none;
+}
+
+button {
+    padding:9px 25px;
+    background-color: #F09C67;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    height: 3rem;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: rgb(247, 173, 127);
+}
+/*--------  Horizontal Lines --------*/
+.white-line{
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 2px;
+    margin: 2.5rem 5rem;
+}
+
+.colored-line{
+    border: 2px solid rgba(76, 132, 146, 0.35);
+    border-radius: 2px;
+    margin: 2.5rem 5rem;
+}
+/* -------- Navbar --------*/
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 8% 20px 10%;
+    background-color: #C7DBE0;
+    height: 12vh;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+}
+  
+.brand {
+    width:65px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.brand:hover {
+    opacity: .85;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: rgb(27, 192, 233);
+}
+
+/* -------- Landing Section -------- */
+
+#landing-section {
+    padding-bottom: 35px;
+}
+
+.inline-container {
+    display: flex;
+    justify-content:center;
+}
+
+.bat-1 {
+    width:80px;
+    margin: 70px 150px 0 0;
+    transition: all .7s ease-in-out;
+}
+
+.landing-text {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.landing-paragraphs {
+    margin-top: 1rem;
+}
+
+.bat-2 {
+    width:100px;
+    margin: 55px 0 0 150px;
+    transition: all .7s ease-in-out;
+}
+
+/*  -------- THE IMAGE -------- */
+
+.landing-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:760px;
+}
+
+/* -------- About Section -------- */
+
+#about{
+    text-align: center;
+}
+
+.colored-section {
+    background-color: #C7DBE0;
+}
+
+.colored-section  h1 {
+    color:white;
+}
+
+.container {
+    padding: 3rem 15rem;
+}
+
+.avatar {
+    width:100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.fa-patreon, .fa-youtube, .fa-envelope-open-text, .fa-paypal{
+    color: #EE7469;
+    font-size: 64px;
+    cursor: pointer;
+}
+.fa-patreon:hover, .fa-youtube:hover, .fa-envelope-open-text:hover, .fa-paypal:hover{
+    opacity: .85;
+}
+
+.about-list {
+    padding:0 5rem;
+}
+
+.left-container {
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.right-container {
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.left-about {
+    text-align: right;
+    padding-left: 2rem;
+}
+
+.right-about {
+    text-align: left;
+    padding-right: 2rem;
+}
+
+/* -------- More Content -------- */
+
+#more-content{
+    text-align: center;
+}
+
+.col-6 {
+    display: flex;
+    padding:0 5rem;
+}
+
+.col-6 p{
+    padding: 1rem 0;
+}
+
+.col-left{
+    padding-right: 1rem;
+}
+
+.col-right{
+    padding-left: 1rem;
+}
+
+/* -------- Donations -------- */
+
+#donations{
+    text-align: center;
+}
+
+.thanks-note {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    color:rgba(22, 82, 97, 0.75);
+    padding: 2rem 5rem;
+}
+
+/* -------- Footer -------- */
+
+footer {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4C8492;
+    padding: 2rem;
+}
+
+/* -------- MEDIA -------- */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+    .container {
+        padding: 3rem 10rem;
+    }
+
+    .col-left{
+        padding-right: 1.5rem;
+    }
+    
+    .col-right{
+        padding-left: 1.5rem;
+    }
+
+    .col-6 {
+        display: block;
+        padding:0 1rem;
+    }
+
+    .col-left{
+        padding-bottom: 2rem;
+        padding-right: 0;
+    }
+
+    .col-right{
+        padding-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 810px) {
+    .landing-image {
+        width: 90%;
+    }
+
+    .about-list {
+        padding:0;
+    }
+}
+@media screen and (max-width: 690px) {
+
+    .brand {
+        width:48px;
+    }
+
+    button {
+        padding:9px 15px;
+        height: 2.5rem;
+    }
+
+    #donation-button{
+        display: none;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    li, a {
+        font-size: 16px;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 0 8px;
+    }
+
+    #landing-section {
+        padding-bottom: 20px;
+    }
+
+    .inline-container{
+        padding-top: 10px;
+    }
+
+    .bat-1 {
+        width:20%;
+        margin: 150px 20px 0 10px;
+    }
+    .bat-2 {
+        width:20%;
+        margin: 120px 10px 0 20px;
+    }
+
+    .landing-image {
+        width:75%;
+        min-width:300px;
+        padding-top:50px;
+    }
+
+    .container {
+        padding: 3rem 40px;
+    }
+
+    .left-container {
+        display: flex;
+    }
+    
+    .right-container {
+        display: flex;
+
+    }
+
+    .zero-bottom-padding {
+        padding-bottom:0;
+    }
+
+    .thanks-note {
+        font-family: 'Swanky and Moo Moo', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color:rgba(22, 82, 97, 0.75);
+        padding: 1rem;
+    }
+}
+
