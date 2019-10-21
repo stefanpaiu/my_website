@@ -249,6 +249,7 @@ button:hover {
     padding-left: 1rem;
 }
 
+/* -------- Labels -------- */
 .new-label {
     font-family: 'Swanky and Moo Moo', cursive;
     padding: 0 .5rem;
@@ -256,6 +257,26 @@ button:hover {
     background-color: #F09C67;
     border: none;
     border-radius: 50px;
+}
+
+.active-label{
+    font-family: 'Swanky and Moo Moo', cursive;
+    padding: 0 .5rem;
+    color: white;
+    background-color:#52DE97;
+    border: none;
+    border-radius: 50px;
+    font-size:24px;
+}
+
+.coming-soon-label{
+    font-family: 'Swanky and Moo Moo', cursive;
+    padding: 0 .5rem;
+    color:#4C8492;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    font-size:24px;
 }
 
 .content-label {
@@ -356,9 +377,21 @@ button:hover {
 }
 /* -------- More Content PAGE -------- */
 
+.left-mc-container {
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
 .left-mc {
     text-align: left;
     padding-left: 3rem;
+    width: 75%;
+}
+
+.left-mc-box {
+    text-align: center;
+    margin-top: 2rem ;
 }
 
 /* -------- Footer -------- */
@@ -372,7 +405,7 @@ footer {
 }
 
 /* -------- MEDIA -------- */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1062px) {
     h1 {
         font-size: 48px;
     }
@@ -415,6 +448,7 @@ footer {
         padding-left: .5rem;
         padding-right: .5rem;
     }
+    
 }
 
 
@@ -432,6 +466,21 @@ footer {
         width: 280px;
         height: 200px;
     }
+
+    .left-mc-container {
+        display: block;
+    }
+
+    #find-me-on h1 {
+        font-size: 36px;
+    }
+
+    .left-mc {
+        text-align: center;
+        padding-left: 0rem;
+        width: 100%;
+    }
+
 }
 @media screen and (max-width: 690px) {
 
